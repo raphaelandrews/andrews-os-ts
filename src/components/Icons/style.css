@@ -1,0 +1,32 @@
+.icons {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.icon__file {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon__img {
+    font-size: 2rem;
+}
+
+.icon__text {
+    position: absolute;
+    top: 40px;
+    white-space: nowrap;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    padding: .1rem;
+    background-color: var(--white);
+    color: var(--third-color);
+}

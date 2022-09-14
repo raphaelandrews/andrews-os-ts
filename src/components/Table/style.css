@@ -1,0 +1,134 @@
+.projects {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    background-color: var(--third-color);
+    width: 460px;
+    height: 575px;
+    border-radius: .5rem;
+}
+
+.projects__header {
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.projects__title {
+    font-weight: var(--font-bold);
+    font-size: var(--r125-fs);
+    color: var(--body-color);
+}
+
+.projects__main {
+    margin-top: 40px;
+    height: calc(100% - 52px);
+}
+
+.projects__table {
+    border-collapse: collapse;
+    width: 90%;
+    height: calc(100% - 40px);
+    margin: 0 auto;
+    color: var(--ice);
+    font-size: var(--r1-fs);
+}
+
+thead,
+tbody {
+    display: block;
+}
+
+thead {
+    border-bottom: 1px solid var(--ice);
+}
+
+.tb__header {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tbhNumber tbhName tbhTech";
+}
+
+.tbhNumber {
+    grid-area: tbhNumber;
+}
+
+.tbhName {
+    grid-area: tbhName;
+}
+
+.tbhTech {
+    grid-area: tbhTech;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+}
+
+tbody {
+    height: calc(100% - 56px);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.tb__row {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tbhNumber tbhName tbhTech";
+}
+
+.tbhNumber {
+    grid-area: tbhNumber;
+}
+
+.tbhName {
+    grid-area: tbhName;
+}
+
+.tbhTech {
+    grid-area: tbhTech;
+}
+
+.tb__row:hover {
+    background-color: var(--grey-blue);
+}
+
+thead tr th:nth-child(1) {
+    cursor: pointer;
+}
+
+thead tr th:nth-child(2) {
+    text-align: left;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+thead tr th:nth-child(3) {
+    cursor: pointer;
+}
+
+.tbr__number,
+.tbr__name,
+.tbr__tech {
+    cursor: pointer;
+}
+.tbr__number {
+    text-align: center;
+}
+

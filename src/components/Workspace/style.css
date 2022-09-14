@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg__img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position-y: 0px;
+    background-image: url(../../assets/img/logo-andrews.svg);
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    background-size: clamp(10rem, 40vw, 30rem);
+    z-index: -1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.3) 0,
+            transparent 1px,
+            transparent 2px,
+            rgba(0, 0, 0, 0.3) 3px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.projects__box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25%;
+   /* visibility: hidden;
+    opacity: 0;*/
+}
