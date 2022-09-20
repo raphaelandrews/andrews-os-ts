@@ -30,8 +30,7 @@ body {
     background-image:
         repeating-linear-gradient(90deg, var(--grid-color, black) 0%, transparent 1px, transparent var(--grid-size), var(--grid-color, black) calc(var(--grid-size) + 1px)),
         repeating-linear-gradient(180deg, var(--grid-color, black) 0%, transparent 1px, transparent var(--grid-size), var(--grid-color, black) calc(var(--grid-size) + 1px));
-
-    background-color: var(--body-color);
+    background-color: var(--dark-blue);
 }
 
 ul {
@@ -67,6 +66,16 @@ img {
 .active-modal {
     visibility: visible !important;
     opacity: 1 !important;
+}
+
+.retro__overlay {
+    content: "";
+    background: linear-gradient(transparent 0, rgba(0, 0, 0, 0.25) 1px) repeat top left/2px 2px,linear-gradient(90deg, transparent 0, rgba(0, 0, 0, 0.25) 1px) repeat top left/2px 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /*=============== SCROLL BAR ===============*/

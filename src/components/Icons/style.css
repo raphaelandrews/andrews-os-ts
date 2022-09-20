@@ -1,32 +1,52 @@
 .icons {
     position: absolute;
-    top: 30px;
-    left: 40px;
+    margin-top: 2.5rem;
+    top: 20px;
+    left: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    align-items: end;
+    justify-content: center;
+}
+
+.icon__draggable {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon__file {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
     align-items: center;
+    width: auto;
+    padding: 10px 5px 6px;
     cursor: pointer;
+    user-select: none;
+}
+
+.icon__box {
+    margin-bottom: 10px;
 }
 
 .icon__img {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--white);
 }
 
 .icon__text {
-    position: absolute;
-    top: 40px;
     white-space: nowrap;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
+    font-size: 16px;
     padding: .1rem;
-    background-color: var(--white);
-    color: var(--third-color);
+    /*background-color: var(--white);*/
+    color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+    .icons {
+        top: 30px;
+    left: 30px;
+    }
 }

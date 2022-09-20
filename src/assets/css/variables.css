@@ -1,46 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: DOS;
+    src: url('../fonts/ModernDOS8x16.ttf') ;
+}
+
+@font-face {
+    font-family: DeterminationMono;
+    src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf') ;
+}
 :root {
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    /*
-            Orange: hsl(12, 100%, 50%)  
-            Orange2: hsl(21, 100%, 50%)
-            Blue: hsl(211, 100%, 48%)  
-            Cyan: hsl(170, 90%, 43%) 
-            Purple: hsl(250, 66%, 75%)
-            Teal: hsl(174, 63%, 62%)
-            Red: hsl(342, 100%, 50%) 
-            Red: hsl(348, 100%, 50%)
-            Blue: hsl(207, 90%, 72%)
-            Pink: hsl(356, 66%, 75%)
-            Yellow: hsl(46, 96%, 55%)
-            Yellow: hsl(41, 100%, 50%)
-            Black: hsl(0, 0%, 13%)
-            Grey: hsl(0, 0%, 38%)
-    */
-
-    --first-hue: 21;
-    --sat: 100%;
-    --lig: 50%;
-    --second-hue: 0;
 
     --purple: hsl(244, 41%, 41%);
+    --purple2: hsl(257, 97%, 34%);
     --green: hsl(99, 55%, 44%);
     --yellow: hsl(36, 81%, 69%);
     --grey: hsl(216, 17%, 12%);
     --grey-blue: hsl(216, 14%, 28%);
+    --blue: hsl(223, 92%, 20%);
+    --dark-blue: hsl(234, 100%, 15%);
+    --cream: hsl(28, 79%, 85%);
+    --cream2: hsl(45, 100%, 84%);
+    --cream3: hsl(61, 100%, 83%);
     --blue-grey: hsl(220, 15%, 20%);
     --blue-grey-alt: hsl(220, 15%, 26%);
     --third-color: hsl(215, 21%, 11%);
     --white: hsl(0, 0%, 100%);
     --ice: hsl(221, 100%, 91%);
     --body-color: hsl(225, 22%, 4%);
-    
-    /*========== Font and typography ==========*/
-    /*font-family: 'Roboto Mono', monospace;*/
 
-    --first-font: 'Roboto Mono', monospace;
+    /*========== Font and typography ==========*/
+    /*font-family: 'Fira Code', monospace;
+    */
+
+    --first-font: DeterminationMono;
     --r2-fs: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
@@ -66,12 +60,12 @@
 
     /*========== Grid ==========*/
     --grid-color: hsl(255, 22%, 6%);
-    --grid-size:30px;
+    --grid-size: 30px;
 }
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 1024px) {
-   :root {
-    --normal-font-size: .75rem;
-   }
+    :root {
+        --normal-font-size: .75rem;
+    }
 }

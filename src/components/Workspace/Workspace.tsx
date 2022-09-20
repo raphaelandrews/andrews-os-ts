@@ -8,9 +8,9 @@ import "./style.css";
 
 const Workspace = () => {
   
-  
   return (
     <div className="container">
+      <div className="bg__stars"></div>
       <div className="bg__img"></div>
       <div className="overlay"></div>
 
