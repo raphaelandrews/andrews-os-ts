@@ -1,49 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
 
 @font-face {
     font-family: DOS;
-    src: url('../fonts/ModernDOS8x16.ttf') ;
+    src: url('../fonts/ModernDOS8x16.ttf');
 }
 
 @font-face {
     font-family: DeterminationMono;
-    src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf') ;
+    src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf');
 }
+
 :root {
     /*========== Colors ==========*/
-
-    --purple: hsl(244, 41%, 41%);
-    --purple2: hsl(257, 97%, 34%);
-    --green: hsl(99, 55%, 44%);
-    --yellow: hsl(36, 81%, 69%);
-    --grey: hsl(216, 17%, 12%);
-    --grey-blue: hsl(216, 14%, 28%);
-    --blue: hsl(223, 92%, 20%);
-    --dark-blue: hsl(234, 100%, 15%);
-    --cream: hsl(28, 79%, 85%);
-    --cream2: hsl(45, 100%, 84%);
-    --cream3: hsl(61, 100%, 83%);
-    --blue-grey: hsl(220, 15%, 20%);
-    --blue-grey-alt: hsl(220, 15%, 26%);
-    --third-color: hsl(215, 21%, 11%);
     --white: hsl(0, 0%, 100%);
     --ice: hsl(221, 100%, 91%);
-    --body-color: hsl(225, 22%, 4%);
+    --dark-blue: hsl(231, 15%, 18%);
+    --dark-purple: hsl(229, 16%, 14%);
+    --pink: hsl(348, 83%, 73%);
+    --green: hsl(172, 67%, 61%);
+    --yellow: hsl(23, 83%, 70%);
+    --violet: hsl(232, 83%, 75%);
+    --purple: hsl(286, 61%, 66%);
+    --blue: hsl(186, 84%, 71%);
+    --grey: hsl(0, 0%, 86%);
 
     /*========== Font and typography ==========*/
     /*font-family: 'Fira Code', monospace;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'JetBrains Mono', monospace;
     */
 
-    --first-font: DeterminationMono;
+    --first-font: 'Source Code Pro', monospace;
+    --second-font: 'Bebas Neue', cursive;
     --r2-fs: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
     --r125-fs: 1.25rem;
     --r1-fs: 1rem;
+    --r0875-fs: .875rem;
     --normal-font-size: .75rem;
     --tiny-font-size: .625rem;
 
     /*========== Font weight ==========*/
+    --font-thin: 100;
+    --font-extralight: 200;
     --font-light: 300;
     --font-regular: 400;
     --font-medium: 500;
@@ -60,7 +68,7 @@
 
     /*========== Grid ==========*/
     --grid-color: hsl(255, 22%, 6%);
-    --grid-size: 30px;
+    --grid-size: 60px;
 }
 
 /*=============== RESPONSIVE ===============*/

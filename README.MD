@@ -28,3 +28,6 @@ npm i @mui/x-data-grid-generator
 
 ## Image Thumbnail
 npm i image-thumbnail
+
+## Emotion Core
+npm i @emotion/core@10.3.1
