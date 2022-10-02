@@ -94,6 +94,36 @@ const About = () => {
             Lorem ipsum dolor
           </span>
         </h3>
+        <h3 className="about__text">
+          Font:{" "}
+          <span className="about__span">
+            Source Code Pro
+          </span>
+        </h3>
+        <h3 className="about__text">
+          Icons Memory:{" "}
+          <span className="about__span">
+            Font Awesome
+          </span>
+        </h3>
+        <h3 className="about__text">
+          Theme:{" "}
+          <span className="about__span">
+            Theme
+          </span>
+        </h3>
+        <h3 className="about__text">
+          Resolution:{" "}
+          <span className="about__span">
+            2880x1800
+          </span>
+        </h3>
+        <h3 className="about__text">
+          Version:{" "}
+          <span className="about__span">
+            1.0
+          </span>
+        </h3>
 
         <div className="about__colors">
           <div className="colors" title="#272935" onClick={() => { setDarkBlue(true); navigator.clipboard.writeText('#272935') }}>

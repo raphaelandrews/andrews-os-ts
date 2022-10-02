@@ -36,9 +36,10 @@
     font-family: 'Bebas Neue', cursive;
     font-family: 'Source Code Pro', monospace;
     font-family: 'JetBrains Mono', monospace;
+    font-family: Hack, monospace;
     */
 
-    --first-font: 'Source Code Pro', monospace;
+    --first-font:  'Source Code Pro', monospace;
     --second-font: 'Bebas Neue', cursive;
     --r2-fs: 2rem;
     --h2-font-size: 1.75rem;

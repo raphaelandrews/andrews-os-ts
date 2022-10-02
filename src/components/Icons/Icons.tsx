@@ -8,6 +8,7 @@ import Draggable from "react-draggable";
 import About from "../About/About";
 import SortableTable from "../Table/Table";
 import data from '../Table/data.json'
+import Tabs from '../Table/Tabs'
 
 
 const Icons = () => {
@@ -120,7 +121,7 @@ const Icons = () => {
               </div>
 
             </div>
-            <SortableTable data={data} />
+            <Tabs />
           </div>
         </Draggable>
       )}
