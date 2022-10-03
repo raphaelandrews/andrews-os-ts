@@ -11,6 +11,7 @@ import './style.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { width } from '@mui/system';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -63,8 +64,13 @@ export default function VerticalTabs() {
                 value={value}
                 onChange={handleChange}
                 aria-label="Vertical tabs example"
-                sx={{ borderRight: 1, borderColor: 'divider' }}
+                sx={{
+                    border: 2, borderColor: 'var(--white)', padding: '.5rem',
+                    "& button": {padding: '8px 12px', minHeight: '40px'},
+                    "& button.Mui-selected": { backgroundColor: 'var(--violet)', color: 'var(--dark-purple)', fontWeight: 'var(--font-bold)' }
+                }}
                 TabIndicatorProps={{ style: { background: 'none' } }}
+
             >
                 <Tab
                     label={
@@ -74,7 +80,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(0)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit' }}
+                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab
@@ -85,8 +91,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(1)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit' }}
-                    className="tab__button"
+                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab
                     label={
@@ -96,8 +101,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(2)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit' }}
-                    className="tab__button"
+                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab
                     label={
@@ -107,8 +111,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(3)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit' }}
-                    className="tab__button"
+                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab label={
                     <div className='tabs__label'>
@@ -117,12 +120,11 @@ export default function VerticalTabs() {
                     </div>
                 }
                     {...a11yProps(4)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit' }}
-                    className="tab__button"
+                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
             </Tabs>
             <TabPanel value={value} index={0}>
-            <FilterableListView
+                <FilterableListView
                     items={[
                         { key: "foo", name: "foo", value: 11 },
                         { key: "bar", name: "bar", value: 12 },
@@ -132,7 +134,7 @@ export default function VerticalTabs() {
                 />
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <FilterableListView
+                <FilterableListView
                     items={[
                         { key: "foo", name: "foo", value: 11 },
                         { key: "bar", name: "bar", value: 12 },

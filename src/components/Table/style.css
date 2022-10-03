@@ -3,7 +3,6 @@
     top: 100px;
     left: 200px;
     width: 460px;
-    height: 575px;
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--dark-purple);
@@ -34,7 +33,6 @@
 .projects__table {
     border-collapse: collapse;
     width: 90%;
-    height: calc(100% - 40px);
     margin: 0 auto;
     color: var(--ice);
     font-size: var(--r1-fs);
@@ -135,26 +133,9 @@ thead tr th:nth-child(3) {
     text-align: center;
 }
 
-
-.css-rtt06n-MuiButtonBase-root-MuiTab-root.Mui-selected,
-.css-1b824rg-MuiButtonBase-root-MuiTab-root.Mui-selected {
-    color: var(--dark-purple) !important;
-    background-color: var(--violet);
-}
-
 .css-19kzrtu {
     width: 100%;
     padding: 0 !important;
-}
-
-#vertical-tabpanel-2 {
-    width: 316px;
-}
-
-.tab__button {
-    font-weight: var(--font-bold) !important;
-    align-items: flex-start !important;
-    width: 144px !important;
 }
 
 .tabs__label {
@@ -165,23 +146,24 @@ thead tr th:nth-child(3) {
 
 .icon__label {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: var(--font-medium);
 }
 
 .tabs__list {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 200px;
 }
 
 .tabs__item {
     font-family: var(--first-font);
     font-weight: var(--font-semibold);
     color: var(--yellow);
-    padding: .75rem 1rem;
+    padding: .5rem 1rem;
 }
 
 .tabs__item:hover {
     color: var(--dark-purple);
     background-color: var(--yellow);
+    cursor: pointer;
 }
