@@ -10,14 +10,8 @@ import Check from "../Check/Check";
 
 const About = () => {
   const [isImg, setIsImg] = useState("/src/assets/img/foto-1.png")
-  const [darkBlue, setDarkBlue] = useState(false);
-  const [darkPurple, setDarkPurple] = useState(false);
-  const [pink, setPink] = useState(false);
-  const [green, setGreen] = useState(false);
-  const [yellow, setYellow] = useState(false);
-  const [violet, setViolet] = useState(false);
-  const [purple, setPurple] = useState(false);
-  const [blue, setBlue] = useState(false);
+  const [white, setWhite] = useState(false);
+  const [black, setBlack] = useState(false);
   const [grey, setGrey] = useState(false);
 
   const setChange = (changeImg: any) => {
@@ -26,19 +20,13 @@ const About = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      if (darkBlue) setDarkBlue(false);
-      if (darkPurple) setDarkPurple(false);
-      if (pink) setPink(false);
-      if (green) setGreen(false);
-      if (yellow) setYellow(false);
-      if (violet) setViolet(false);
-      if (purple) setPurple(false);
-      if (blue) setBlue(false);
+      if (white) setWhite(false);
+      if (black) setBlack(false);
       if (grey) setGrey(false);
     }, 1000);
 
     return () => clearTimeout(timeout);
-  }, [darkBlue, darkPurple, pink, green, yellow, violet, purple, blue, grey]);
+  }, [white, black, grey]);
 
 
   return (
@@ -126,95 +114,29 @@ const About = () => {
         </h3>
 
         <div className="about__colors">
-          <div className="colors" title="#272935" onClick={() => { setDarkBlue(true); navigator.clipboard.writeText('#272935') }}>
+          <div className="colors" title="#ffffff" onClick={() => { setWhite(true); navigator.clipboard.writeText('#ffffff') }}>
             <Check
-              isVisible={darkBlue}
+              isVisible={white}
               css={{
                 color: 'green',
                 strokeDasharray: 50,
-                strokeDashoffset: darkBlue ? 0 : -50,
+                strokeDashoffset: white ? 0 : -50,
                 transition: "all 300ms ease-in-out"
               }}
             />
           </div>
-          <div className="colors" title="#1e2029" onClick={() => { setDarkPurple(true); navigator.clipboard.writeText('#1e2029') }}>
+          <div className="colors" title="#252525" onClick={() => { setBlack(true); navigator.clipboard.writeText('#252525') }}>
             <Check
-              isVisible={darkPurple}
+              isVisible={black}
               css={{
                 color: 'green',
                 strokeDasharray: 50,
-                strokeDashoffset: darkPurple ? 0 : -50,
+                strokeDashoffset: black ? 0 : -50,
                 transition: "all 300ms ease-in-out"
               }}
             />
           </div>
-          <div className="colors" title="#f38198" onClick={() => { setPink(true); navigator.clipboard.writeText('#f38198') }}>
-            <Check
-              isVisible={pink}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: pink ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#59decc" onClick={() => { setGreen(true); navigator.clipboard.writeText('#59decc') }}>
-            <Check
-              isVisible={green}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: green ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#f2a473" onClick={() => { setYellow(true); navigator.clipboard.writeText('#f2a473') }}>
-            <Check
-              isVisible={yellow}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: yellow ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#8a98f4" onClick={() => { setViolet(true); navigator.clipboard.writeText('#8a98f4') }}>
-            <Check
-              isVisible={violet}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: violet ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#c573dd" onClick={() => { setPurple(true); navigator.clipboard.writeText('#c573dd') }}>
-            <Check
-              isVisible={purple}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: purple ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#77e7f3" onClick={() => { setBlue(true); navigator.clipboard.writeText('#77e7f3') }}>
-            <Check
-              isVisible={blue}
-              css={{
-                color: 'green',
-                strokeDasharray: 50,
-                strokeDashoffset: blue ? 0 : -50,
-                transition: "all 300ms ease-in-out"
-              }}
-            />
-          </div>
-          <div className="colors" title="#dbdbdb" onClick={() => { setGrey(true); navigator.clipboard.writeText('#dbdbdb') }}>
+          <div className="colors" title="#b7b8b8" onClick={() => { setGrey(true); navigator.clipboard.writeText('#dbdbdb') }}>
             <Check
               isVisible={grey}
               css={{

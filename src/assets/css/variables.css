@@ -17,7 +17,9 @@
 
 :root {
     /*========== Colors ==========*/
-    --white: hsl(0, 0%, 100%);
+    --first-color: hsl(0, 0%, 100%);
+    --second-color: hsl(0, 0%, 15%);
+    --alt-color: hsl(210, 1%, 72%);
     --ice: hsl(221, 100%, 91%);
     --dark-blue: hsl(231, 15%, 18%);
     --dark-purple: hsl(229, 16%, 14%);
@@ -27,7 +29,7 @@
     --violet: hsl(232, 83%, 75%);
     --purple: hsl(286, 61%, 66%);
     --blue: hsl(186, 84%, 71%);
-    --grey: hsl(0, 0%, 86%);
+    /*--grey: hsl(0, 0%, 86%);*/
 
     /*========== Font and typography ==========*/
     /*font-family: 'Fira Code', monospace;
@@ -66,10 +68,6 @@
     --z-img: 1;
     --z-fixed: 10;
     --z-menu: 100;
-
-    /*========== Grid ==========*/
-    --grid-color: hsl(255, 22%, 6%);
-    --grid-size: 60px;
 }
 
 /*=============== RESPONSIVE ===============*/

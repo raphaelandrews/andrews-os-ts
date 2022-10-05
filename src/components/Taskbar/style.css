@@ -3,12 +3,17 @@
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 .75rem;
     height: 2.5rem;
     width: 100vw;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-    background-color: var(--dark-blue);
+    border-bottom: 2px solid var(--second-color);
+    background-color: var(--first-color);
+}
+
+.taskbar__logo {
+    width: 32px;
+    cursor: pointer;
 }
 
 .taskbar__icon {

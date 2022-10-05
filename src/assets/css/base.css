@@ -26,11 +26,12 @@ body {
     font-family: var(--first-font);
     font-weight: var(--font-regular);
     font-size: var(--normal-font-size);
-    color: var(--green);
-    /*background-image:
-        repeating-linear-gradient(90deg, var(--white, black) 0%, transparent 1px, transparent var(--grid-size), var(--white, black) calc(var(--grid-size) + 1px)),
-        repeating-linear-gradient(180deg, var(--white, black) 0%, transparent 1px, transparent var(--grid-size), var(--white, black) calc(var(--grid-size) + 1px));*/
-    background-color: var(--dark-purple);
+    color: var(--second-color);
+    background: linear-gradient(90deg, var(--first-color) 21px, transparent 1%) 50%,
+        linear-gradient(var(--first-color) 21px, transparent 1%) 50%,
+        var(--second-color);
+    background-attachment: fixed;
+    background-size: 22px 22px;
 }
 
 ul {

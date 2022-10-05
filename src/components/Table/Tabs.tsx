@@ -32,7 +32,7 @@ function TabPanel(props: TabPanelProps) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    <Typography component="div">{children}</Typography>
                 </Box>
             )}
         </div>
@@ -56,21 +56,20 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, fontFamily: 'var(--first-font)', bgcolor: 'var(--dark-purple)', display: 'flex', height: 'calc(100% - 40px)' }}
+            sx={{ flexGrow: 1, fontFamily: 'var(--first-font)', bgcolor: 'var(--first-color)', display: 'flex', height: 'calc(100% - 40px)' }}
         >
             <Tabs
                 orientation="vertical"
                 variant="scrollable"
                 value={value}
                 onChange={handleChange}
-                aria-label="Vertical tabs example"
+                aria-label="Vertical tabs"
                 sx={{
-                    border: 2, borderColor: 'var(--white)', padding: '.5rem',
+                    border: 2, borderColor: 'var(--second-color)', padding: '.5rem',
                     "& button": {padding: '8px 12px', minHeight: '40px'},
-                    "& button.Mui-selected": { backgroundColor: 'var(--violet)', color: 'var(--dark-purple)', fontWeight: 'var(--font-bold)' }
+                    "& button.Mui-selected": { backgroundColor: 'var(--second-color)', color: 'var(--first-color)', fontWeight: 'var(--font-bold)' }
                 }}
                 TabIndicatorProps={{ style: { background: 'none' } }}
-
             >
                 <Tab
                     label={
@@ -80,7 +79,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(0)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab
@@ -91,7 +90,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(1)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab
                     label={
@@ -101,7 +100,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(2)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab
                     label={
@@ -111,7 +110,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(3)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
                 <Tab label={
                     <div className='tabs__label'>
@@ -120,7 +119,7 @@ export default function VerticalTabs() {
                     </div>
                 }
                     {...a11yProps(4)}
-                    sx={{ color: 'var(--violet)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
                 />
             </Tabs>
             <TabPanel value={value} index={0}>
@@ -133,7 +132,7 @@ export default function VerticalTabs() {
                     renderer={(item) => <div>{item.name}</div>}
                 />
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={1} >
                 <FilterableListView
                     items={[
                         { key: "foo", name: "foo", value: 11 },

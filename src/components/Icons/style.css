@@ -33,7 +33,7 @@
 
 .icon__img {
     font-size: 2.5rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 .icon__text {
@@ -41,7 +41,7 @@
     font-size: 16px;
     padding: .1rem;
     /*background-color: var(--white);*/
-    color: var(--white);
+    color: var(--black);
 }
 
 @media screen and (min-width: 1024px) {
