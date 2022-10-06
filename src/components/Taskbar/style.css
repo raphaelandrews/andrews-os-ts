@@ -7,37 +7,10 @@
     padding: 0 .75rem;
     height: 2.5rem;
     width: 100vw;
-    border-bottom: 2px solid var(--second-color);
-    background-color: var(--first-color);
+    background-color: var(--dark);
 }
 
 .taskbar__logo {
-    width: 32px;
+    width: 24px;
     cursor: pointer;
-}
-
-.taskbar__icon {
-    flex: 1 1 0%;
-    max-width: 150px;
-    color: var(--white);
-    border-radius: 2px;
-    margin-top: 2px;
-    padding: 0 .5rem;
-    height: 2rem;
-    font-size: 11px;
-    background-color: var(--body-color);
-    box-shadow: rgb(0 0 0 / 30%) -1px 0px inset,
-        rgb(255 255 255 / 20%) 1px 1px 1px inset;
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-.calendar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-weight: var(--font-regular);
-    font-size: 12px;
 }

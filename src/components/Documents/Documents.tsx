@@ -4,14 +4,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import FilterableListView from '../Table/List'
-import SortableTable from '../Table/Table'
-import data from '../Table/data.json'
 import './style.css'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { width } from '@mui/system';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -46,8 +39,7 @@ function a11yProps(index: number) {
     };
 }
 
-
-export default function VerticalTabs() {
+export default function Documents() {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -56,7 +48,7 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, fontFamily: 'var(--first-font)', bgcolor: 'var(--first-color)', display: 'flex', height: 'calc(100% - 40px)' }}
+            sx={{ flexGrow: 1, fontFamily: 'var(--first-font)', display: 'flex', height: '404px' }}
         >
             <Tabs
                 orientation="vertical"
@@ -65,10 +57,10 @@ export default function VerticalTabs() {
                 onChange={handleChange}
                 aria-label="Vertical tabs"
                 sx={{
-                    border: 2, borderColor: 'var(--second-color)', padding: '.5rem',
-                    "& button": {padding: '8px 12px', minHeight: '40px'},
-                    "& button.:hover": {backgroundColor: 'var(--alt-color)'},
-                    "& button.Mui-selected": { backgroundColor: 'var(--second-color)', color: 'var(--first-color)', fontWeight: 'var(--font-bold)' }
+                    borderRadius: '0 0 .5rem .5rem', backgroundColor: 'var(--dark-black)',
+                    "& button": { padding: '.5rem 1rem ', width:'175px',  minHeight: '2rem', color: 'var(--first-color)' },
+                    "& button.:hover": { backgroundColor: 'var(--alt-color)' },
+                    "& button.Mui-selected": { color: 'var(--first-color)', backgroundColor: 'var(--dark-grey)', fontWeight: 'var(--font-regular)' }
                 }}
                 TabIndicatorProps={{ style: { background: 'none' } }}
             >
@@ -80,7 +72,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(0)}
-                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab
@@ -91,7 +83,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(1)}
-                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab
@@ -102,7 +94,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(2)}
-                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab
@@ -113,7 +105,7 @@ export default function VerticalTabs() {
                         </div>
                     }
                     {...a11yProps(3)}
-                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
                 <Tab label={
@@ -123,39 +115,18 @@ export default function VerticalTabs() {
                     </div>
                 }
                     {...a11yProps(4)}
-                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', fontWeight: 'var(--font-bold)', alignItems: 'flex-start', width: '144px' }}
+                    sx={{ color: 'var(--second-color)', fontFamily: 'var(--first-font)', textTransform: 'inherit', alignItems: 'flex-start', width: '144px' }}
                     className="tab__button"
                 />
             </Tabs>
             <TabPanel value={value} index={0}>
-                <FilterableListView
-                    items={[
-                        { key: "foo", name: "interactive-rating" },
-                        { key: "bar", name: "ntfard" },
-                        { key: "baz", name: "" }
-                    ]}
-                    renderer={(item) => <div>{item.name}</div>}
-                />
+                1
             </TabPanel>
             <TabPanel value={value} index={1} >
-                <FilterableListView
-                    items={[
-                        { key: "foo", name: "foo", value: 11 },
-                        { key: "bar", name: "bar", value: 12 },
-                        { key: "baz", name: "baz", value: 8 }
-                    ]}
-                    renderer={(item) => <div>{item.name}</div>}
-                />
+                2
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <FilterableListView
-                    items={[
-                        { key: "foo", name: "foo", value: 11 },
-                        { key: "bar", name: "bar", value: 12 },
-                        { key: "baz", name: "baz", value: 8 }
-                    ]}
-                    renderer={(item) => <div>{item.name}</div>}
-                />
+                3
             </TabPanel>
             <TabPanel value={value} index={3}>
                 Item Four

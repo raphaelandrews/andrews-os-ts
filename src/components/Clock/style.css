@@ -1,7 +1,6 @@
 .clock {
-    font-family: var(--second-font);
-    font-weight: var(--font-regular);
+    font-weight: var(--font-bold);
     font-size: 24px;
-    color: var(--black);
+    color: var(--first-color);
     transition: all 0.5s;
 }

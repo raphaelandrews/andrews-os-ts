@@ -138,36 +138,3 @@ thead tr th:nth-child(3) {
     padding: 0 !important;
 }
 
-.tabs__label {
-    display: flex;
-    align-items: center;
-    gap: .25rem;
-}
-
-.icon__label {
-    font-size: 20px;
-    font-weight: var(--font-medium);
-}
-
-.tabs__list {
-    margin: 0;
-    padding: .5rem;
-    width: 296px;
-    height: 220px;
-    border-top: 2px solid var(--second-color);
-    border-right: 2px solid var(--second-color);
-    border-bottom: 2px solid var(--second-color);
-}
-
-.tabs__item {
-    font-family: var(--first-font);
-    font-weight: var(--font-semibold);
-    color: var(--yellow);
-    padding: .5rem 1rem;
-}
-
-.tabs__item:hover {
-    color: var(--dark-purple);
-    background-color: var(--yellow);
-    cursor: pointer;
-}
