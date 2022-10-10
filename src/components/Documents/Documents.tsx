@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+
+import img1 from '../../assets/img/interactive-rating.png'
 
 import './style.css'
 
@@ -46,6 +49,12 @@ export default function Documents() {
         setValue(newValue);
     };
 
+    const [isImg, setIsImg] = useState("/src/assets/img/interactive-rating.png")
+
+    const setChange = (changeImg: any) => {
+        setIsImg(changeImg);
+    };
+
     return (
         <Box
             sx={{ flexGrow: 1, fontFamily: 'var(--first-font)', display: 'flex', height: '404px' }}
@@ -58,7 +67,7 @@ export default function Documents() {
                 aria-label="Vertical tabs"
                 sx={{
                     borderRadius: '0 0 .5rem .5rem', backgroundColor: 'var(--dark-black)',
-                    "& button": { padding: '.5rem 1rem ', width:'175px',  minHeight: '2rem', color: 'var(--first-color)' },
+                    "& button": { padding: '.5rem 1rem ', width: '175px', minHeight: '2rem', color: 'var(--first-color)' },
                     "& button.:hover": { backgroundColor: 'var(--alt-color)' },
                     "& button.Mui-selected": { color: 'var(--first-color)', backgroundColor: 'var(--dark-grey)', fontWeight: 'var(--font-regular)' }
                 }}
@@ -120,7 +129,11 @@ export default function Documents() {
                 />
             </Tabs>
             <TabPanel value={value} index={0}>
-                1
+                <div onClick={() =>
+                    setChange("/src/assets/img/foto-1.png")
+                }>
+                    1
+                </div>
             </TabPanel>
             <TabPanel value={value} index={1} >
                 2

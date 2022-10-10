@@ -1,35 +1,3 @@
-.projects {
-    position: absolute;
-    top: 100px;
-    left: 200px;
-    width: 460px;
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: var(--first-color);
-}
-
-.projects__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    width: 100%;
-    height: 2.5rem;
-    border-radius: .5rem .5rem 0 0;
-    background-color: var(--first-color);
-}
-
-.projects__title {
-    font-weight: var(--font-bold);
-    font-size: var(--r125-fs);
-    color: var(--body-color);
-}
-
-.projects__main {
-    margin-top: 40px;
-    height: calc(100% - 52px);
-}
-
 .projects__table {
     border-collapse: collapse;
     width: 90%;
@@ -132,9 +100,3 @@ thead tr th:nth-child(3) {
 .tbr__number {
     text-align: center;
 }
-
-.css-19kzrtu {
-    width: 100%;
-    padding: 0 !important;
-}
-

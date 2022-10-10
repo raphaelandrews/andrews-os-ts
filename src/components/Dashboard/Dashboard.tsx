@@ -1,42 +1,53 @@
-import { useState } from 'react';
-import './style.css';
-import Documents from '../Documents/Documents';
+import { useState } from 'react'
+import './style.css'
+import logo from '../../assets/img/logo.svg'
+import Projects from '../Projects/Projects'
+
 
 const Dashboard = () => {
-    const [isDocs, setIsDocs] = useState(true);
+    const [isProject, setIsProject] = useState(false);
 
-    const handleDocs = () => {
-        setIsDocs((current) => !current);
+    const handleProject = () => {
+        setIsProject((current) => !current);
     };
 
     return (
-        <div className="db__container">
-            <div className="docs">
-                <div className="docs__header">
-                    <div className="buttons" onClick={(e) => handleDocs()}>
-                        <div className="top__buttons">
-                            <div className="button"></div>
-                            <div className="button"></div>
-                        </div>
-                        <div className="button"></div>
-                    </div>
+        <div>
+            <div className='db__container'>
+                <div className='icon__folder' onClick={(e) => handleProject()}>
+                    <div className='icon__box'></div>
                 </div>
-                <div className='docs__box'>
-                    <div className='docs__path'>
-                        <div className='docs__top'></div>
-                    </div>
-                    <Documents />
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__logo'>
+                    <img src={logo} alt="Logo Andrews" className='db__logo' />
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
+                </div>
+                <div className='icon__folder'>
+                    <div className='icon__box'></div>
                 </div>
             </div>
-            <div className="About"></div>
-            <div className="A1"></div>
-            <div className="A2"></div>
-            <div className="A3"></div>
-            <div className="A4"></div>
-            <div className="A5"></div>
-            <div className="A6"></div>
+
+            {isProject && (
+    <Projects />
+)}
         </div>
     )
 }
 
-export default Dashboard;
+export default Dashboard

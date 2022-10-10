@@ -1,0 +1,47 @@
+/*======= Grid ======= */
+.projects__container {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.docs {
+    box-shadow: #0000003d 0 3px 8px;
+}
+
+.docs__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+    width: 100%;
+    height: 2.25rem;
+}
+
+/*======= Buttons ======= */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.top__buttons {
+    display: flex;
+    gap: 3px;
+}
+
+.button {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dark-grey);
+}
+
+.project__img {
+    width: 100%;
+    height: 198px;
+    border-radius: 0 0 .5rem .5rem;
+}

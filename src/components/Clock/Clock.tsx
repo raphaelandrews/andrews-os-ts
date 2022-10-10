@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import './style.css'
 
 
-// Clock Component
 const Clock = (): JSX.Element => {
   const [clock, setClock] = useState<string>(new Date().toLocaleTimeString());
 
   useEffect(() => {
     const clock = setInterval(
-      (): void => setClock(new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})),
+      (): void => setClock(new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })),
       1000
     );
 
@@ -18,8 +17,8 @@ const Clock = (): JSX.Element => {
   }, []);
 
   return (
-        <div>
-          {/*<div >
+    <div>
+      {/*<div >
             {new Date().toLocaleDateString(undefined, {
               weekday: "long",
               year: "numeric",
@@ -27,10 +26,13 @@ const Clock = (): JSX.Element => {
               day: "numeric",
             })}
         </div>*/}
-          <div className="clock">
-            {clock}
-          </div>
+
+      <div className="clock">
+        <div className="clock__box">
+          {clock}
         </div>
+      </div>
+    </div>
   );
 };
 
