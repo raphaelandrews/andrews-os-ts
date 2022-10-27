@@ -1,13 +1,19 @@
 import "./style.css";
-import Dashboard from "../Dashboard/Dashboard";
-import Clock from "../Clock/Clock";
+import Top from "../Top/Top";
+import Mid from "../Mid/Mid";
+import Bottom from "../Bottom/Bottom";
+import Third from "../Third/Third";
+import Fourth from "../Fourth/Fourth";
 
 const Workspace = () => {
 
   return (
     <div className="container">
-     <Clock />
-     <Dashboard />
+      <Top />
+      <Mid />
+      <Third />
+      <Fourth />
+      <Bottom />
     </div>
   );
 };

@@ -1,15 +1,16 @@
 .clock {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
+    font-size: 40px;
     font-weight: var(--font-bold);
-    font-size: 24px;
-    color: var(--white-vhs);
+    border-radius: 1rem;
+    background-color: var(--alt-color);
     transition: all 0.5s;
 }
 
 .clock__box {
-    padding: 1rem;
+    padding: .75rem;
     border-radius: .5rem;
     background-color: var(--dark-black);
 }

@@ -44,8 +44,8 @@ const Dashboard = () => {
             </div>
 
             {isProject && (
-    <Projects />
-)}
+                <Projects />
+            )}
         </div>
     )
 }

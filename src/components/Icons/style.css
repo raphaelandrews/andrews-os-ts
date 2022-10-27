@@ -1,19 +1,10 @@
 .icons {
     position: absolute;
-    margin-top: 2.5rem;
-    top: 20px;
-    left: 20px;
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1rem;
-    align-items: end;
-    justify-content: center;
-}
-
-.icon__draggable {
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 2rem;
 }
 
 .icon__file {
@@ -21,27 +12,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
     cursor: pointer;
-    user-select: none;
 }
 
 .icon__img {
-    font-size: 2.5rem;
-    color: var(--black);
+    padding: .5rem;
+    font-size: 2rem;
+    border-radius: .75rem;
+    background-color: var(--alt-color);
 }
 
 .icon__text {
-    white-space: nowrap;
     font-size: 16px;
-    padding: .1rem;
-    /*background-color: var(--white);*/
-    color: var(--black);
+    margin-top: .5rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .icons {
-        top: 30px;
-    left: 30px;
-    }
+
 }

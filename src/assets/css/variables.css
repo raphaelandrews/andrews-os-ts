@@ -1,31 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap');
-@import url('http://fonts.cdnfonts.com/css/chicago-2');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
-@font-face {
-    font-family: DOS;
-    src: url('../fonts/ModernDOS8x16.ttf');
-}
-
-@font-face {
-    font-family: DeterminationMono;
-    src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf');
-}
 
 :root {
     /*========== Colors ==========*/
-    --first-color: hsl(0, 0%, 100%);
-    --second-color: hsl(0, 0%, 15%);
-    --alt-color: hsl(210, 1%, 72%);
-    --dark: hsl(231, 15%, 18%);
-    --dark-black: hsl(229, 16%, 14%);
-    --dark-grey: hsl(232, 15%, 30%);
-    --black: hsl(216, 13%, 15%);
+    --first-color: hsl(240, 62%, 97%);
+    --second-color: hsl(230, 3%, 14%);
+    --alt-color: hsl(240, 2%, 17%);
+    --white: hsl(0, 0%, 100%);
     --blue: hsl(204, 100%, 60%);
     --arctic: hsl(187, 96%, 58%);
     --green: hsl(166, 84%, 55%);
@@ -39,25 +22,26 @@
     --purple-pink: linear-gradient(225deg, rgba(255, 69, 154, 1) 0%, rgba(115, 59, 254, 1) 100%);
     --pink-blue: linear-gradient(45deg, rgba(253, 2, 156, 1) 0%, rgba(0, 204, 255, 1) 100%);
 
+
+    --blue-cp: hsl(204, 98%, 50%);
+    --pink-cp: hsl(324, 100%, 50%);
+    --purple-cp: hsl(240, 100%, 7%);
+    --grey-cp: hsl(240, 14%, 55%);
+
     --dark-vhs: hsl(60, 3%, 13%);
     --blue-vhs: hsl(216, 99%, 48%);
     --red-vhs: hsl(350, 100%, 43%);
     --white-vhs: hsl(240, 39%, 95%);
 
     /*========== Font and typography ==========*/
-    /*font-family: 'Fira Code', monospace;
-    font-family: 'Noto Sans Mono', monospace;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Source Code Pro', monospace;
-    font-family: 'JetBrains Mono', monospace;
-    font-family: Hack, monospace;
-    font-family: 'Chicago', sans-serif;  
-    font-family: 'Inconsolata', monospace;                      
+    /*  
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Dosis', sans-serif; 
+    font-family: 'Syncopate', sans-serif;                   
     */
 
-    --first-font: 'Source Code Pro', monospace;
-    --second-font: 'Bebas Neue', cursive;
+    --first-font: 'Syncopate', sans-serif; 
+    --second-font: '';
     --r2-fs: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;

@@ -1,12 +1,12 @@
 
 import { useState } from 'react';
 import './style.css';
-import SortableTable from '../Table/Table'
-import data from '../Table/data.json'
+import Draggable from 'react-draggable';
 
 
 const Projects = () => {
     const [isDocs, setIsDocs] = useState(true);
+    const [isProj, setProj] = useState("/src/assets/img/foto-1.png")
 
     const handleDocs = () => {
         setIsDocs((current) => !current);
@@ -15,27 +15,37 @@ const Projects = () => {
     const [isImg, setIsImg] = useState("/src/assets/img/interactive-rating.png")
 
     const setChange = (changeImg: any) => {
-        setIsImg(changeImg);
+        setProj(changeImg);
     };
 
     return (
         <div className="projects__container">
-            <div className="docs">
-                <div className="docs__header">
-                    <div className="buttons" onClick={(e) => handleDocs()}>
-                        <div className="top__buttons">
-                            <div className="button"></div>
-                            <div className="button"></div>
-                        </div>
-                        <div className="button"></div>
+            <div className="projects__box">
+                <div className='projects__files'>
+                    <div className='projects__folder'>
+                        <i className="bx bx-folder projects__icon"></i>
+                        <span className="projects__text">Projects</span>
                     </div>
-                </div>
-                <div className='docs__box'>
-                    <SortableTable data={data} />
+                    <div className='projects__folder'>
+                        <i className="bx bx-folder projects__icon"></i>
+                        <span className="projects__text">Projects</span>
+                    </div>
+                    <div className='projects__folder'>
+                        <i className="bx bx-folder projects__icon"></i>
+                        <span className="projects__text">Projects</span>
+                    </div>
+                    <div className='projects__folder'>
+                        <i className="bx bx-folder projects__icon"></i>
+                        <span className="projects__text">Projects</span>
+                    </div>
+                    <div className='projects__folder'>
+                        <i className="bx bx-folder projects__icon"></i>
+                        <span className="projects__text">Projects</span>
+                    </div>
                 </div>
             </div>
-            <div className="A4">
-                <div className="docs__header">
+            <div className="projects__img">
+                <div className="projects__header">
                     <div className="buttons" onClick={(e) => handleDocs()}>
                         <div className="top__buttons">
                             <div className="button"></div>
@@ -44,7 +54,7 @@ const Projects = () => {
                         <div className="button"></div>
                     </div>
                 </div>
-                <img className="project__img" src={isImg} />
+                <img className="project__img" src={isProj} />
             </div>
         </div>
     )

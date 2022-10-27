@@ -1,0 +1,9 @@
+@media screen and (min-width: 800px) {
+    .bot {
+        height: 20vh;
+    }
+
+    .bot .col {
+        width: 25%;
+    }
+}
