@@ -1,9 +1,0 @@
-@media screen and (min-width: 800px) {
-    .fourth {
-        height: 15vh;
-    }
-
-    .fourth .col {
-        width: 25%;
-    }
-}

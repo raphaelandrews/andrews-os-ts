@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/road-rage');
 
 :root {
+    --header: 3rem;
+
     /*========== Colors ==========*/
     --first-color: hsl(240, 62%, 97%);
     --second-color: hsl(230, 3%, 14%);
@@ -13,20 +15,28 @@
     --arctic: hsl(187, 96%, 58%);
     --green: hsl(166, 84%, 55%);
     --yellow: hsl(39, 98%, 66%);
-    --dark-purple: hsl(240, 100%, 7%);
     --purple: hsl(272, 81%, 66%);
     --pink: hsl(330, 84%, 71%);
     --orange: hsl(12, 94%, 68%);
     --grey: hsl(0, 0%, 74%);
-    --yellow-pink: linear-gradient(270deg, rgba(255, 69, 154, 1) 0%, rgba(255, 198, 39, 1) 100%);
+    --yellow-pink: linear-gradient(225deg, rgba(255, 69, 154, 1) 0%, rgba(255, 198, 39, 1) 100%);
     --purple-pink: linear-gradient(225deg, rgba(255, 69, 154, 1) 0%, rgba(115, 59, 254, 1) 100%);
     --pink-blue: linear-gradient(45deg, rgba(253, 2, 156, 1) 0%, rgba(0, 204, 255, 1) 100%);
 
+    --dark-purple: hsl(240, 100%, 7%);
+    --pink-yellow: linear-gradient(0deg, rgba(239, 141, 15, 1) 0%, rgba(234, 45, 141, 1) 100%);
+
 
     --blue-cp: hsl(204, 98%, 50%);
-    --pink-cp: hsl(324, 100%, 50%);
+    --pink2-cp: hsl(324, 100%, 50%);
     --purple-cp: hsl(240, 100%, 7%);
     --grey-cp: hsl(240, 14%, 55%);
+    --yellow-cp: hsl(34, 88%, 50%);
+    --pink-cp: hsl(330, 82%, 55%);
+
+    --red-cp: hsl(342, 85%, 52%);
+    --yellow2-cp: hsl(38, 92%, 50%);
+    --violet-cp: hsl(261, 33%, 17%);
 
     --dark-vhs: hsl(60, 3%, 13%);
     --blue-vhs: hsl(216, 99%, 48%);
@@ -37,11 +47,13 @@
     /*  
     font-family: 'Lexend', sans-serif;
     font-family: 'Dosis', sans-serif; 
-    font-family: 'Syncopate', sans-serif;                   
+    font-family: 'Syncopate', sans-serif; 
+    font-family: 'Road Rage', sans-serif;                  
     */
 
-    --first-font: 'Syncopate', sans-serif; 
+    --first-font: 'Dosis', sans-serif; 
     --second-font: '';
+    --alt-font: 'Road Rage', sans-serif;
     --r2-fs: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;

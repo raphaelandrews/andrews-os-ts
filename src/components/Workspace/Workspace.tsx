@@ -1,19 +1,19 @@
 import "./style.css";
-import Top from "../Top/Top";
-import Mid from "../Mid/Mid";
-import Bottom from "../Bottom/Bottom";
-import Third from "../Third/Third";
-import Fourth from "../Fourth/Fourth";
+import Taskbar from "../Taskbar/Taskbar";
+import Grid from "../Grid/Grid";
+import Clock from "../Clock/Clock";
+import Icons from "../Icons/Icons";
 
 const Workspace = () => {
 
   return (
     <div className="container">
-      <Top />
-      <Mid />
-      <Third />
-      <Fourth />
-      <Bottom />
+      <div className="card"></div>
+      <Taskbar />
+      <Clock />
+      <Icons />
+      {/*<div className="overlay"></div>*/}
+      <Grid />
     </div>
   );
 };

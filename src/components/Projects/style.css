@@ -56,24 +56,3 @@
     height: 160px;
     border-radius: 0 0 .5rem .5rem;
 }
-
-/*======= Buttons ======= */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    cursor: pointer;
-}
-
-.top__buttons {
-    display: flex;
-    gap: 3px;
-}
-
-.button {
-    border-radius: 50%;
-    width: 5px;
-    height: 5px;
-    background-color: var(--dark-grey);
-}
