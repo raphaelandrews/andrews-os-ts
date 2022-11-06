@@ -7,6 +7,7 @@ import interactiveRating from "../../assets/img/foto-1.png";
 import nftCard from "../../assets/img/foto-2.png";
 import orderSummary from "../../assets/img/foto-3.png";
 import foto from "../../assets/img/foto-raphael.png";
+import os from "../../assets/img/andrewsos.png";
 
 import Check from "../Check/Check";
 
@@ -198,6 +199,8 @@ const System = () => {
             />
           </div>
         </div>
+
+        <img src={os} alt="" className="os" />
       </div>
     </div>
   );
