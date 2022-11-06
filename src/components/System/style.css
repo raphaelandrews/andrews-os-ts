@@ -12,7 +12,7 @@
 .system {
     position: absolute;
     top: 90px;
-    left: 160px;
+    left: 20%;
     min-width: 280px;
     min-height: 340px;
     display: flex;
