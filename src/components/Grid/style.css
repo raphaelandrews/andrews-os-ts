@@ -14,7 +14,7 @@
   z-index: -1;
 }
 
-/*.grid {
+.grid {
   position: absolute;
   bottom: -30%;
   left: 0;
@@ -30,7 +30,7 @@
   transform: perspective(50vh) rotateX(60deg) translateZ(10px);
   animation: moving-grid 0.5s infinite linear;
   z-index: -1;
-}*/
+}
 
 /*
 @keyframes moving-grid{

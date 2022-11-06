@@ -31,7 +31,7 @@ const Icons = () => {
     <div>
       <div className="icons">
         <div className="icon__file cybr-btn"
-          onClick={(e) => handleProj()}
+          
         >
           <i className="bx bx-folder icon__img"></i>
           <div className="icon__text">Projects</div>
@@ -53,7 +53,7 @@ const Icons = () => {
         </div>
 
         <div className="icon__file cybr-btn"
-          onClick={(e) => handleSystem()}
+          
         >
           <i className="bx bx-user icon__img"></i>
           <div className="icon__text cybr-btn">About Me</div>

@@ -12,7 +12,7 @@ const Workspace = () => {
       <Taskbar />
       <Clock />
       <Icons />
-      {/*<div className="overlay"></div>*/}
+      <div className="overlay"></div>
       <Grid />
     </div>
   );
