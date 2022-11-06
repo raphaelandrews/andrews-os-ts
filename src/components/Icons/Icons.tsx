@@ -68,7 +68,7 @@ const Icons = () => {
           <div className="icon__text cybr-btn">Contact</div>
           <span className="cybr-btn__glitch">
             <i className="bx bx-user icon__img"></i>
-            <div className="icon__text">Projects</div>
+            <div className="icon__text">Contact</div>
           </span>
         </div>
       </div>
