@@ -3,6 +3,7 @@ import Taskbar from "../Taskbar/Taskbar";
 import Grid from "../Grid/Grid";
 import Clock from "../Clock/Clock";
 import Icons from "../Icons/Icons";
+import Animation from "../Animation/Animation";
 
 const Workspace = () => {
 
@@ -13,6 +14,7 @@ const Workspace = () => {
       <Clock />
       <Icons />
       <div className="overlay"></div>
+      <Animation />
       <Grid />
     </div>
   );

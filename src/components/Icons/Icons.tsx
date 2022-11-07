@@ -48,7 +48,7 @@ const Icons = () => {
           <div className="icon__text cybr-btn">System</div>
           <span className="cybr-btn__glitch">
             <i className="bx bx-folder icon__img"></i>
-            <div className="icon__text">Projects</div>
+            <div className="icon__text">System</div>
           </span>
         </div>
 
@@ -59,7 +59,7 @@ const Icons = () => {
           <div className="icon__text cybr-btn">About Me</div>
           <span className="cybr-btn__glitch">
             <i className="bx bx-user icon__img"></i>
-            <div className="icon__text">Projects</div>
+            <div className="icon__text">About Me</div>
           </span>
         </div>
 

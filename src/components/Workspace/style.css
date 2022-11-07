@@ -16,5 +16,5 @@
             transparent 2px,
             rgba(255, 255, 255, 0.05) 3px);
     pointer-events: none;
-    z-index: 1;
+    z-index: -1;
 }
