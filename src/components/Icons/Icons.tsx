@@ -31,7 +31,7 @@ const Icons = () => {
     <div>
       <div className="icons">
         <div className="icon__file cybr-btn"
-          
+          onClick={(e) => handleProj()}
         >
           <i className="bx bx-folder icon__img"></i>
           <div className="icon__text">Projects</div>
@@ -77,6 +77,7 @@ const Icons = () => {
         <Draggable
           handle="#imhandle"
           cancel=".buttons"
+          bounds="body"
         >
           <div className="projects">
             <div className="projects__header" id="imhandle">
@@ -98,6 +99,7 @@ const Icons = () => {
         <Draggable
           handle="#imhandle"
           cancel=".buttons"
+         
         >
           <div>
             <div className="system">

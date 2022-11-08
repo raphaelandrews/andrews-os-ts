@@ -1,0 +1,34 @@
+.file__box {
+    width: 300px;
+    text-align: center;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    background-color: #17112B;
+}
+
+.file__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #FF3399;
+}
+
+.file__img {
+    width: 150px;
+    height: 150px;
+    border-radius: .25rem;
+}
+
+.file__title {
+    font-size: 1.5rem;
+    color: var(--yellow-cp);
+    margin: .75rem 0;
+}
+
+.file__text {
+    max-width: 80%;
+    margin: 0 auto;
+}

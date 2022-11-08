@@ -32,8 +32,10 @@
 
 
     --blue-cp: hsl(204, 98%, 50%);
+    --dark-blue-cp: hsl(231, 40%, 24%);
     --pink2-cp: hsl(324, 100%, 50%);
     --purple-cp: hsl(240, 100%, 7%);
+    --dark-purple-cp: hsl(244, 70%, 13%);
     --grey-cp: hsl(240, 14%, 55%);
     --yellow-cp: hsl(34, 88%, 50%);
     --pink-cp: hsl(330, 82%, 55%);
