@@ -30,7 +30,7 @@
     --dark-purple: hsl(240, 100%, 7%);
     --pink-yellow: linear-gradient(0deg, rgba(239, 141, 15, 1) 0%, rgba(234, 45, 141, 1) 100%);
 
-
+    /*== Cyberpunk ==*/
     --blue-cp: hsl(204, 98%, 50%);
     --dark-blue-cp: hsl(231, 40%, 24%);
     --pink2-cp: hsl(324, 100%, 50%);
@@ -45,6 +45,17 @@
     --yellow2-cp: hsl(38, 92%, 50%);
     --violet-cp: hsl(261, 33%, 17%);
 
+    /*== Sweet ==*/
+    --dark-sweet: hsl(225, 25%, 6%);
+    --dark-sweet2: hsl(225, 25%, 8%);
+    --blue-sweet: hsl(228, 25%, 12%);
+    --grey-sweet: hsl(223, 13%, 79%);
+    --purple-pink-sweet: linear-gradient(to right,
+            hsl(271, 100%, 50%) 0%,
+            hsl(291, 100%, 50%)) 1;
+
+
+    /*== VHS ==*/
     --dark-vhs: hsl(60, 3%, 13%);
     --blue-vhs: hsl(216, 99%, 48%);
     --red-vhs: hsl(350, 100%, 43%);
@@ -58,7 +69,7 @@
     font-family: 'Road Rage', sans-serif;                  
     */
 
-    --first-font: 'Dosis', sans-serif; 
+    --first-font: 'Dosis', sans-serif;
     --second-font: '';
     --alt-font: 'Road Rage';
     --r2-fs: 2rem;

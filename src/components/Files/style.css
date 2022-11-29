@@ -1,4 +1,7 @@
 .file__box {
+    position: absolute;
+    left: 10vw;
+    top: 30%;
     width: 300px;
     text-align: center;
     border-radius: 1rem;

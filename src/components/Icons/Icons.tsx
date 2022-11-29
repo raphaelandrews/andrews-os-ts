@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import "./style.css";
 
 import "../System/style.css";
-
 import Draggable from "react-draggable";
-
 import System from "../System/System";
 import Projects from "../Projects/Projects";
+
 
 
 const Icons = () => {
@@ -30,16 +29,7 @@ const Icons = () => {
   return (
     <div>
       <div className="icons">
-        <div className="icon__file cybr-btn"
-          onClick={(e) => handleProj()}
-        >
-          <i className="bx bx-folder icon__img"></i>
-          <div className="icon__text">Projects</div>
-          <span className="cybr-btn__glitch">
-            <i className="bx bx-folder icon__img"></i>
-            <div className="icon__text">Projects</div>
-          </span>
-        </div>
+        <Projects />
 
         <div className="icon__file cybr-btn"
           onClick={(e) => handleSystem()}
@@ -53,7 +43,7 @@ const Icons = () => {
         </div>
 
         <div className="icon__file cybr-btn"
-          
+
         >
           <i className="bx bx-user icon__img"></i>
           <div className="icon__text cybr-btn">About Me</div>
@@ -73,33 +63,10 @@ const Icons = () => {
         </div>
       </div>
 
-      {isProj && (
-        <Draggable
-          handle="#imhandle"
-          cancel=".buttons"
-          bounds="body"
-        >
-          <div className="projects">
-            <div className="projects__header" id="imhandle">
-              <span className="projects__title">Projects</span>
-              <div className="buttons" onClick={handleProj}>
-                <div className="top__buttons">
-                  <div className="button"></div>
-                  <div className="button"></div>
-                </div>
-                <div className="button"></div>
-              </div>
-            </div>
-            <Projects />
-          </div>
-        </Draggable>
-      )}
-
       {isSystem && (
         <Draggable
           handle="#imhandle"
           cancel=".buttons"
-         
         >
           <div>
             <div className="system">
