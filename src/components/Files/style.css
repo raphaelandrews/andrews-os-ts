@@ -1,28 +1,29 @@
-.file__box {
+.file-1 {
     position: absolute;
-    left: 10vw;
-    top: 30%;
-    width: 300px;
-    text-align: center;
-    border-radius: 1rem;
-    padding-bottom: 1rem;
-    background-color: #17112B;
 }
 
-.file__bg {
+
+.file__box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 1rem 1rem 0 0;
-    background-color: #FF3399;
+    width: 70vw;
+    max-width: 800px;
+    min-height: 400px;
+    max-height: calc(100vh - 100px);
+    border-radius: 0 0 .25rem .25rem;
+    overflow-y: auto;
+    text-align: center;
+    background-color: var(--purple-cp);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .file__img {
-    width: 150px;
-    height: 150px;
-    border-radius: .25rem;
+    width: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.file__content {
+    width: 50%;
 }
 
 .file__title {

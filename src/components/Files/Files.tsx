@@ -1,19 +1,18 @@
-import React from 'react'
 import './style.css'
-import interactiveRating from '../../assets/img/interactive-rating.png'
+import statsCard from '../../assets/img/stats-preview-card.png'
 
 const Files = () => {
-    return (
-      <div className="file__box">
-        <div className="file__bg">
-          <img src={interactiveRating} alt="" className="file__img" />
-        </div>
+  return (
+    <div className="file__box">
+      <img src={statsCard} alt="" className="file__img" />
+      <div className="file__content">
         <h2 className="file__title">Interactive Rating</h2>
         <p className="file__text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Files;

@@ -42,9 +42,7 @@ const Icons = () => {
           </span>
         </div>
 
-        <div className="icon__file cybr-btn"
-
-        >
+        <div className="icon__file cybr-btn">
           <i className="bx bx-user icon__img"></i>
           <div className="icon__text cybr-btn">About Me</div>
           <span className="cybr-btn__glitch">
