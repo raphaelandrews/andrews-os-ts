@@ -27,7 +27,7 @@ const Icons = () => {
 
 
   return (
-    <div>
+    <>
       <div className="icons">
         <Projects />
 
@@ -83,7 +83,7 @@ const Icons = () => {
           </div>
         </Draggable>
       )}
-    </div>
+    </>
   );
 };
 
