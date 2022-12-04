@@ -39,6 +39,7 @@ const Projects = () => {
 
     const handleFileOne = () => {
         setIsFileOne((current) => !current);
+        setIsDragging2({ ...isDragging2, status: true, zIndex: isDragging2.zIndex = 101 }), setIsDragging({ ...isDragging, zIndex: isDragging.zIndex = 100 })
     };
 
     const handleFileTwo = () => {
@@ -61,6 +62,9 @@ const Projects = () => {
         setIsFileSix((current) => !current);
     };
 
+    const [isDragging, setIsDragging] = useState({ status: false, zIndex: 100 })
+    const [isDragging2, setIsDragging2] = useState({ status: false, zIndex: 100 })
+
     return (
         <div>
             <div className="icon__file cybr-btn"
@@ -76,115 +80,125 @@ const Projects = () => {
 
             {isOpen && (
                 <Draggable
-                    handle="#imhandle"
-                    cancel=".buttons"
+                    handle=".draggable-block-container"
+                    onStart={() => { setIsDragging({ ...isDragging, status: true, zIndex: isDragging.zIndex = 101 }), setIsDragging2({ ...isDragging2, zIndex: isDragging2.zIndex = 100 }) }}
+                    onStop={() => setIsDragging({ ...isDragging, status: false })}
                 >
-                    <div className="projects">
+                    <div className={`draggable-block-container projects`}
+                        style={{
+                            zIndex: isDragging.zIndex
+                        }}
+                    >
                         <div className='projects__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
-                            <div className="projects__path">
-                                <span className='path__icon'>&#127760;</span>
-                                <span className='path__name'>www.andrews.dev\projects</span>
-                            </div>
+                                <div className="projects__path">
+                                    <span className='path__icon'>&#127760;</span>
+                                    <span className='path__name'>www.andrews.dev\projects</span>
+                                </div>
 
-                            <div className="buttons" onClick={(e) => handleOpen()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+                                <div className="buttons" onClick={(e) => handleOpen()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <div className="projects__container">
-                            <div className="projects__box">
-                                <img src={sun} alt="Vaporwave Sun" className='projects__sun' />
-                                <h2 className='projects__top'>&#128293; Hi, here you can check my latest projects &#128293;</h2>
-                                <div className='projects__files'>
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={statsCard} className="projects__preview" onClick={(e) => handleFileOne()} />
-                                        <h3 className="projects__text">Stats Preview Card</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={statsCard} className="projects__preview" />
+                            <div className="projects__container">
+                                <div className="projects__box">
+                                    <h2 className='projects__title'>Projects</h2>
+                                    <h3 className='projects__top'>&#128293; Hi, here you can check my latest projects &#128293;</h3>
+                                    <div className='projects__files'>
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={statsCard} className="projects__preview" onClick={(e) => handleFileOne()} />
                                             <h3 className="projects__text">Stats Preview Card</h3>
-                                        </span>
-                                    </div>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={statsCard} className="projects__preview" />
+                                                <h3 className="projects__text">Stats Preview Card</h3>
+                                            </span>
+                                        </div>
 
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={nftCard} className="projects__preview" onClick={(e) => handleFileTwo()} />
-                                        <h3 className="projects__text">NFT Card</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={nftCard} className="projects__preview" />
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={nftCard} className="projects__preview" onClick={(e) => handleFileTwo()} />
                                             <h3 className="projects__text">NFT Card</h3>
-                                        </span>
-                                    </div>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={nftCard} className="projects__preview" />
+                                                <h3 className="projects__text">NFT Card</h3>
+                                            </span>
+                                        </div>
 
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={interactiveRating} className="projects__preview" onClick={(e) => handleFileThree()} />
-                                        <h3 className="projects__text">Interactive Rating</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={interactiveRating} className="projects__preview" />
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={interactiveRating} className="projects__preview" onClick={(e) => handleFileThree()} />
                                             <h3 className="projects__text">Interactive Rating</h3>
-                                        </span>
-                                    </div>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={interactiveRating} className="projects__preview" />
+                                                <h3 className="projects__text">Interactive Rating</h3>
+                                            </span>
+                                        </div>
 
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={cardComponent} className="projects__preview" onClick={(e) => handleFileFour()} />
-                                        <h3 className="projects__text">Card Component</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={cardComponent} className="projects__preview" />
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={cardComponent} className="projects__preview" onClick={(e) => handleFileFour()} />
                                             <h3 className="projects__text">Card Component</h3>
-                                        </span>
-                                    </div>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={cardComponent} className="projects__preview" />
+                                                <h3 className="projects__text">Card Component</h3>
+                                            </span>
+                                        </div>
 
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={orderSummary} className="projects__preview" onClick={(e) => handleFileFive()} />
-                                        <h3 className="projects__text">Order Summary</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={orderSummary} className="projects__preview" />
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={orderSummary} className="projects__preview" onClick={(e) => handleFileFive()} />
                                             <h3 className="projects__text">Order Summary</h3>
-                                        </span>
-                                    </div>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={orderSummary} className="projects__preview" />
+                                                <h3 className="projects__text">Order Summary</h3>
+                                            </span>
+                                        </div>
 
-                                    <div className='projects__folder cybr-btn'>
-                                        <img src={qrCode} className="projects__preview" onClick={(e) => handleFileSix()} />
-                                        <h3 className="projects__text">QR Code</h3>
-                                        <span className='cybr-btn__glitch'>
-                                            <img src={qrCode} className="projects__preview" />
+                                        <div className='projects__folder cybr-btn'>
+                                            <img src={qrCode} className="projects__preview" onClick={(e) => handleFileSix()} />
                                             <h3 className="projects__text">QR Code</h3>
-                                        </span>
+                                            <span className='cybr-btn__glitch'>
+                                                <img src={qrCode} className="projects__preview" />
+                                                <h3 className="projects__text">QR Code</h3>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
+
                 </Draggable >
             )
             }
 
             {isFileOne && (
                 <Draggable
-                    handle="#imhandle"
-                    cancel=".buttons"
+                    handle=".draggable-block-container"
+                    onStart={() => { setIsDragging2({ ...isDragging2, status: true, zIndex: isDragging2.zIndex = 101 }), setIsDragging({ ...isDragging, zIndex: isDragging.zIndex = 100 }) }}
+                    onStop={() => setIsDragging2({ ...isDragging2, status: false })}
                 >
-                    <div className='file-1'>
+                    <div className={`draggable-block-container file-1`}
+                        style={{
+                            zIndex: isDragging2.zIndex
+                        }}>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileOne()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileOne()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileOne />
+                            <FileOne />
                         </div>
                     </div>
                 </Draggable>
@@ -197,20 +211,20 @@ const Projects = () => {
                 >
                     <div className='file-1'>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileTwo()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileTwo()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileTwo />
+                            <FileTwo />
                         </div>
                     </div>
                 </Draggable>
@@ -223,20 +237,20 @@ const Projects = () => {
                 >
                     <div className='file-1'>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileThree()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileThree()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileThree />
+                            <FileThree />
                         </div>
                     </div>
                 </Draggable>
@@ -249,20 +263,20 @@ const Projects = () => {
                 >
                     <div className='file-1'>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileFour()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileFour()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileFour />
+                            <FileFour />
                         </div>
                     </div>
                 </Draggable>
@@ -275,20 +289,20 @@ const Projects = () => {
                 >
                     <div className='file-1'>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileFive()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileFive()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileFive />
+                            <FileFive />
                         </div>
                     </div>
                 </Draggable>
@@ -301,20 +315,20 @@ const Projects = () => {
                 >
                     <div className='file-1'>
                         <div className='file__wrapper'>
-                        <div className="projects__header" id="imhandle">
-                            <img src={logo} alt="" className='projects__logo' />
+                            <div className="projects__header" id="imhandle">
+                                <img src={logo} alt="" className='projects__logo' />
 
                                 <span className='path__name'>Stats Preview Card</span>
-                            
-                            <div className="buttons" onClick={(e) => handleFileSix()}>
-                                <div className="top__buttons">
-                                    <div className="button"></div>
+
+                                <div className="buttons" onClick={(e) => handleFileSix()}>
+                                    <div className="top__buttons">
+                                        <div className="button"></div>
+                                        <div className="button"></div>
+                                    </div>
                                     <div className="button"></div>
                                 </div>
-                                <div className="button"></div>
                             </div>
-                        </div>
-                        <FileSix />
+                            <FileSix />
                         </div>
                     </div>
                 </Draggable>

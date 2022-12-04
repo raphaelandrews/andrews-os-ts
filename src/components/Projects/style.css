@@ -61,6 +61,17 @@
     overflow-y: scroll;
 }
 
+.projects__title {
+    font-family: var(--alt-font);
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    background: -webkit-linear-gradient(var(--yellow-cp), var(--pink-cp));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: .3em;
+}
+
 .projects__sun {
     width: 200px;
     margin: 4rem auto  1rem;
@@ -68,6 +79,7 @@
 
 .projects__top {
     text-align: center;
+    font-size: 1.25rem;
 }
 
 .projects__files {
