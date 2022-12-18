@@ -10,9 +10,16 @@
 }
 
 .system {
-    position: absolute;
-    top: 90px;
-    left: 20%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.system__wrapper {
+    transform: translate(-50%, -50%);
+}
+
+.system__container {
     min-width: 280px;
     min-height: 340px;
     display: flex;
@@ -22,8 +29,8 @@
     animation: spin 2.5s linear infinite;
 }
 
-.system::before,
-.system::after {
+.system__container::before,
+.system__container::after {
     content: "";
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -40,7 +47,7 @@
     z-index: -1;
 }
 
-.system::before {
+.system__container::before {
     /*transform: translate3d(0px, 0px, 0) scale(1);*/
     filter: blur(4px);
     opacity: var(0.7);
